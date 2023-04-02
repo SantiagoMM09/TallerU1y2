@@ -12,7 +12,7 @@ body {
   background-position: center;
 }
 
-h1, h2, h5, p, button, label {
+h1, p, button, label {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
 }
@@ -28,11 +28,7 @@ h1 {
   text-align: center;
 }
 
-h5 {
-  font-size: 25px;
-}
-
-a, input, span {
+a, input, span, textarea {
   font-family: "Montserrat", sans-serif;
   font-weight: normal;
 }
@@ -116,6 +112,7 @@ nav ul li:hover {
   margin: auto;
   display: flex;
   justify-content: space-around;
+  margin: 80px auto 20px;
 }
 .container .container-uno .boton #buscador {
   background-color: #fff;
@@ -129,21 +126,21 @@ nav ul li:hover {
 }
 .container .container-uno .boton #buscador:hover {
   background-color: #fcd3d5;
-  color: #fff;
+  color: rgb(32, 32, 32);
   border: 2px solid #fff;
 }
 .container .container-uno .boton button {
-  background-color: #f55b63;
+  background-color: #F0131E;
   color: #fff;
-  width: 80px;
+  width: 100px;
   height: 40px;
   border: none;
   border-radius: 14px;
+  cursor: pointer;
+  padding: 5px 20px;
 }
 .container .container-uno .boton button:hover {
-  background-color: #fff;
-  color: #F0131E;
-  border: 2px solid #f55b63;
+  background-color: #f55b63;
 }
 .container .container-uno #resultado {
   width: 60%;

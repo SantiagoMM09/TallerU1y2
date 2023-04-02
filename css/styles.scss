@@ -2,3 +2,44 @@
 @import 'functions';
 @import 'general';
 @import 'mixins';
+
+
+.parrafo{
+    @include botones($color_t, $secundario, 40%, 200px, none, 20px);
+    margin: 70px auto;
+    padding: 3rem 3rem 2rem;
+    box-shadow: 0 0 70px 4px $secundario;
+
+    p{
+        color: $secundario;
+        text-align: center;
+    }
+
+    button{
+        @include botones($principal, $secundario, 50%, 50px, none, 10px);
+        display: block;
+        margin: 30px auto 0;
+        font-size: 20px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        a{
+            display: block;
+            @include wihema(100%, 100%, auto);
+            padding: 12px 0;
+            color: $secundario;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        &:hover{
+            background-color: aclarar($principal, 15%);
+        }
+
+    }
+
+    &:hover{
+        box-shadow: 0 0 40px 7px $principal;
+    }
+}

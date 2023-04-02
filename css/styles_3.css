@@ -12,7 +12,7 @@ body {
   background-position: center;
 }
 
-h1, h2, h5, p, button, label {
+h1, p, button, label {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
 }
@@ -28,11 +28,7 @@ h1 {
   text-align: center;
 }
 
-h5 {
-  font-size: 25px;
-}
-
-a, input, span {
+a, input, span, textarea {
   font-family: "Montserrat", sans-serif;
   font-weight: normal;
 }
@@ -104,9 +100,9 @@ form {
   height: auto;
   border: none;
   border-radius: 14px;
-  margin: auto;
+  margin: 80px auto;
   padding: 2rem 3rem;
-  box-shadow: 0 0 40px 7px #F0131E;
+  box-shadow: 0 0 40px 7px #fff;
 }
 form label {
   display: block;
@@ -137,4 +133,7 @@ form button {
 }
 form button:hover {
   background-color: #f55b63;
+}
+form:hover {
+  box-shadow: 0 0 40px 7px #F0131E;
 }/*# sourceMappingURL=styles_3.css.map */

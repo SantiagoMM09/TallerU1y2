@@ -5,9 +5,9 @@
 
 form{
     @include botones($secundario, $secundario, 400px, auto,none, 14px);
-    margin: auto;
+    margin: 80px auto;
     padding: 2rem 3rem;
-    box-shadow: 0 0 40px 7px $principal;
+    box-shadow: 0 0 40px 7px $secundario;
 
     label{
         display: block;
@@ -37,5 +37,9 @@ form{
         &:hover{
             background-color: aclarar($principal, 15%);
         }
+    }
+
+    &:hover{
+        box-shadow: 0 0 40px 7px $principal;
     }
 }

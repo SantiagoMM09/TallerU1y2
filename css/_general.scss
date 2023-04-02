@@ -12,7 +12,7 @@ body{
     background-position: center;
 }
 
-h1, h2, h5,p, button, label  {
+h1, p, button, label  {
     font-family: $fuente;
     font-weight: $bold;
 }
@@ -26,11 +26,7 @@ h1{
     text-align: center;
 }
 
-h5{
-    font-size: 25px;
-}
-
-a,input, span{
+a,input, span, textarea{
     font-family: $fuente;
     font-weight: $normal;
 }

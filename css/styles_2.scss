@@ -16,6 +16,7 @@
             @include wihema(50%, auto, auto);
             display: flex;
             justify-content: space-around;
+            margin: 80px auto 20px;
 
             #buscador{
                 @include botones($secundario, $color_t, 200px, 40px, 2px solid aclarar($principal,15%), 14px);
@@ -23,15 +24,17 @@
                 margin-right: 30px;
         
                 &:hover{
-                    @include hoverBotones(aclarar($principal,40%), $secundario, 2px solid $secundario);
+                    @include hoverBotones(aclarar($principal,40%), $color_t, 2px solid $secundario);
                 }
             }
     
             button{
-                @include botones(aclarar($principal, 15%), $secundario, 80px, 40px, none, 14px);
+                @include botones($principal, $secundario, 100px, 40px, none, 14px);                
+                cursor: pointer;
+                padding: 5px 20px;
                 
                 &:hover{
-                    @include hoverBotones($secundario, $principal, 2px solid aclarar($principal,15%));
+                    background-color: aclarar($principal, 15%);
                 }
             }
         }

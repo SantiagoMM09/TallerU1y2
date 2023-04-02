@@ -1,0 +1,20 @@
+@mixin botones($bg-color, $txt-c, $ancho, $alto, $borde, $redondeado){
+    background-color: $bg-color;
+    color: $txt-c;
+    width: $ancho;
+    height: $alto;
+    border: $borde;
+    border-radius: $redondeado;
+}
+
+@mixin hoverBotones($bg-color, $txt-c, $borde){
+    background-color: $bg-color;
+    color: $txt-c;
+    border: $borde;
+}
+
+@mixin wihema($ancho, $alto, $margin){
+    width: $ancho;
+    height: $alto;
+    margin: $margin;
+}

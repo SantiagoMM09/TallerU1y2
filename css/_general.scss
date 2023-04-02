@@ -1,14 +1,88 @@
+@import 'mixins';
 *{
     padding: 0;
     margin: 0;
 }
 
-h1, h2{
+body{
+    background-image: url(../img/fondo-marvel.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-position: center;
+}
+
+h1, h2, h5,p, button, label  {
     font-family: $fuente;
     font-weight: $bold;
 }
 
-p, a, span{
+h1{
+    @include wihema(100%, 60px, 80px 0 30px);
+    background: linear-gradient(to right, transparent, $principal, transparent);
+    padding: 20px;
+    color: $secundario;
+    font-size: 50px;
+    text-align: center;
+}
+
+h5{
+    font-size: 25px;
+}
+
+a,input, span{
     font-family: $fuente;
     font-weight: $normal;
+}
+
+p{
+    color: $color_t;
+    font-size: 30px;
+}
+
+nav{
+    @include botones($secundario, $principal, 100%, 70px, none, none);
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0px 25px 50px  oscurecer($principal, 15%);
+
+    #logo{
+        width: 30%;
+
+        img{
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    ul{
+        @include wihema(45%, 100%, none);
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        
+        li{
+            display: inline-block;
+            background-color: $secundario;
+            width: 90%;
+
+            a{
+                @include wihema(100%,100%, auto);
+                display: block;
+                padding-top: 23px;
+                color: $principal;
+                text-align: center;
+                text-decoration: none;
+                justify-items: center;
+
+                &:hover{
+                    color: $secundario;
+                }
+            }
+
+            &:hover{
+                background-color: oscurecer($principal, 15%);
+            }
+        }
+    }
 }

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/styles_3.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <!--Barra de navegación-->
+    <nav>
+        <div id="logo">
+            <img src="img/Marvel-logo.png" alt="">
+        </div>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="pag2.html">Fetch</a></li>
+            <li><a href="formulario.html">Comentarios</a></li>
+        </ul>
+    </nav>
+
+    
+    <h1>Formulario de contacto</h1>
+    <form id="formulario">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre">
+
+        <label for="email">E-mail;</label>
+        <input type="email" name="email" id="email">
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+
+        <button type="button" onclick="validarFormulario()">Enviar</button>
+
+
+    </form>
+
+    <script src="js/formulario.js"></script>
+    <script src="js/class/persona.js"></script>
+    
+</body>
+</html>

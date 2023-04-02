@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="css/styles_2.css">
-    <link rel="stylesheet" href="css/estilos.css">
+    <!--<link rel="stylesheet" href="css/estilos.css">-->
     <title>Marvel</title>
 </head>
 <body>
-
+    <!--Barra de navegación-->
     <nav>
         <div id="logo">
             <img src="img/Marvel-logo.png" alt="">
@@ -18,14 +18,24 @@
         <ul>
             <li><a href="index.html">Inicio</a></li>
             <li><a href="pag2.html">Fetch</a></li>
-            <li><a href="">Comentarios</a></li>
+            <li><a href="formulario.html">Comentarios</a></li>
         </ul>
     </nav>
 
-    <div class="container">
-        <div class="row" id="marvel-row"></div>
-    </div>
+    <!--personajes-->
     
+    <h1>PERSONAJES</h1>
+    <div class="container">
+        <div class="container-uno" >
+            <div class="boton">
+                <input type="text" name="buscador" id="buscador" placeholder="Buscar..." onclick="variantes()">
+                <button type="submit" onclick="buscarHeroe()">Buscar</button>
+            </div>    
+            <div id="resultado"></div>
+        </div>
+
+    </div>
+        
 </body>
 
     <script src="js/fetch.js"></script>

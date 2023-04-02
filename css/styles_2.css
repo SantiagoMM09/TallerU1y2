@@ -4,25 +4,51 @@
   margin: 0;
 }
 
-h1, h2 {
+body {
+  background-image: url(../img/fondo-marvel.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  background-position: center;
+}
+
+h1, h2, h5, p, button, label {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
 }
 
-p, a, span {
+h1 {
+  width: 100%;
+  height: 60px;
+  margin: 80px 0 30px;
+  background: linear-gradient(to right, transparent, #F0131E, transparent);
+  padding: 20px;
+  color: #fff;
+  font-size: 50px;
+  text-align: center;
+}
+
+h5 {
+  font-size: 25px;
+}
+
+a, input, span {
   font-family: "Montserrat", sans-serif;
   font-weight: normal;
 }
 
-body {
-  background-color: #F0131E;
+p {
+  color: rgb(32, 32, 32);
+  font-size: 30px;
 }
 
 nav {
-  width: 100%;
-  height: 70px;
   background-color: #fff;
   color: #F0131E;
+  width: 100%;
+  height: 70px;
+  border: none;
+  border-radius: none;
   display: flex;
   justify-content: space-around;
   box-shadow: 0px 25px 50px #ac0b13;
@@ -37,9 +63,10 @@ nav #logo img {
 }
 nav ul {
   width: 45%;
+  height: 100%;
+  margin: none;
   display: flex;
   justify-content: space-around;
-  height: 100%;
   list-style: none;
 }
 nav ul li {
@@ -48,18 +75,114 @@ nav ul li {
   width: 90%;
 }
 nav ul li a {
-  display: block;
   width: 100%;
   height: 100%;
+  margin: auto;
+  display: block;
   padding-top: 23px;
   color: #F0131E;
+  text-align: center;
   text-decoration: none;
   justify-items: center;
-  text-align: center;
 }
 nav ul li a:hover {
   color: #fff;
 }
 nav ul li:hover {
   background-color: #ac0b13;
+}
+
+.container {
+  width: 60%;
+  height: auto;
+  margin: auto;
+  justify-content: center;
+}
+.container .container-uno {
+  width: 60%;
+  height: auto;
+  margin: auto;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+.container .container-uno .boton {
+  width: 50%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+.container .container-uno .boton #buscador {
+  background-color: #fff;
+  color: rgb(32, 32, 32);
+  width: 200px;
+  height: 40px;
+  border: 2px solid #f55b63;
+  border-radius: 14px;
+  padding-left: 15px;
+  margin-right: 30px;
+}
+.container .container-uno .boton #buscador:hover {
+  background-color: #fcd3d5;
+  color: #fff;
+  border: 2px solid #fff;
+}
+.container .container-uno .boton button {
+  background-color: #f55b63;
+  color: #fff;
+  width: 80px;
+  height: 40px;
+  border: none;
+  border-radius: 14px;
+}
+.container .container-uno .boton button:hover {
+  background-color: #fff;
+  color: #F0131E;
+  border: 2px solid #f55b63;
+}
+.container .container-uno #resultado {
+  width: 60%;
+  height: auto;
+  margin: 20px auto;
+  background-color: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.container .container-uno #resultado p {
+  text-align: center;
+  margin: 10px;
+}
+.container .container-uno #resultado img {
+  width: 100%;
+  height: 400px;
+  margin: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+table {
+  width: 25%;
+  height: auto;
+  margin: 60px auto;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 0 20px #940910;
+}
+table td, table th {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #b3b3b3;
+  background-color: #fff;
+  border-radius: 20px;
+}
+table th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #b3b3b3;
+  border-right: 2px solid #b3b3b3;
+}
+table tbody tr:nth-child(even) {
+  background-color: #d9d9d9;
+}
+table tbody tr:hover {
+  background-color: #f67379;
 }/*# sourceMappingURL=styles_2.css.map */

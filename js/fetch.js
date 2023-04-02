@@ -9,7 +9,8 @@
     fetch(`https://gateway.marvel.com:443/v1/public/characters/${heroe}${clave}`,
     {
         method: 'GET',
-        headers: new Headers({ 'Content-type': 'application/json'})
+        headers: new Headers({ 'Content-type': 'application/json'}),
+        mode: "no-cors"
     })
     .then(response => response.json())
     .then(data =>{

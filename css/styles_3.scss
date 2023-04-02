@@ -2,3 +2,40 @@
 @import 'functions';
 @import 'general';
 @import 'mixins';
+
+form{
+    @include botones($secundario, $secundario, 400px, auto,none, 14px);
+    margin: auto;
+    padding: 2rem 3rem;
+    box-shadow: 0 0 40px 7px $principal;
+
+    label{
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+
+    input, textarea{
+        width: 97%;
+        padding: 0.5rem;
+        border: 1px solid $color_t;
+        border-radius: 5px;
+        margin: 0 auto 1rem;
+    }
+
+    textarea{
+        height: 100px;
+    }
+
+    button{
+        @include botones($principal, $secundario, 50%, 50px, none, 10px);
+        display: block;
+        margin: auto;
+        font-size: 20px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:hover{
+            background-color: aclarar($principal, 15%);
+        }
+    }
+}

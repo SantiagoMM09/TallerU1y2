@@ -42,6 +42,11 @@ p {
   font-size: 30px;
 }
 
+label {
+  font-size: 20px;
+  color: #F0131E;
+}
+
 nav {
   background-color: #fff;
   color: #F0131E;
@@ -90,4 +95,46 @@ nav ul li a:hover {
 }
 nav ul li:hover {
   background-color: #ac0b13;
+}
+
+form {
+  background-color: #fff;
+  color: #fff;
+  width: 400px;
+  height: auto;
+  border: none;
+  border-radius: 14px;
+  margin: auto;
+  padding: 2rem 3rem;
+  box-shadow: 0 0 40px 7px #F0131E;
+}
+form label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+form input, form textarea {
+  width: 97%;
+  padding: 0.5rem;
+  border: 1px solid rgb(32, 32, 32);
+  border-radius: 5px;
+  margin: 0 auto 1rem;
+}
+form textarea {
+  height: 100px;
+}
+form button {
+  background-color: #F0131E;
+  color: #fff;
+  width: 50%;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  display: block;
+  margin: auto;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+form button:hover {
+  background-color: #f55b63;
 }/*# sourceMappingURL=styles_3.css.map */

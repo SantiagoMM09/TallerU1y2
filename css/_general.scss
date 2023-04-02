@@ -40,6 +40,11 @@ p{
     font-size: 30px;
 }
 
+label{
+    font-size: 20px;
+    color: $principal;
+}
+
 nav{
     @include botones($secundario, $principal, 100%, 70px, none, none);
     display: flex;

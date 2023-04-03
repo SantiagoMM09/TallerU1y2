@@ -11,7 +11,7 @@ form{
 
     label{
         display: block;
-        margin-bottom: 0.5rem;
+        margin-bottom: 7px;
     }
 
     input, textarea{
@@ -26,7 +26,28 @@ form{
         height: 100px;
     }
 
+    span{
+        margin-top: 5px;
+    }
+/*
     button{
+        @include botones($principal, $secundario, 50%, 50px, none, 10px);
+        display: block;
+        margin: auto;
+        font-size: 20px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:hover{
+            background-color: aclarar($principal, 15%);
+        }
+    }*/
+
+    &:hover{
+        box-shadow: 0 0 40px 7px $principal;
+    }
+
+    button[type=submit]{
         @include botones($principal, $secundario, 50%, 50px, none, 10px);
         display: block;
         margin: auto;
@@ -39,7 +60,15 @@ form{
         }
     }
 
-    &:hover{
-        box-shadow: 0 0 40px 7px $principal;
+    .error-message {
+        color: aclarar($principal, 15%);
+        font-size: 12px;
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+    
+    .invalid{
+        border: 1px solid aclarar($principal, 5%);
+        background-color: aclarar($principal, 40%);	
     }
 }

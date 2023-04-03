@@ -25,15 +25,18 @@
     <h1>COMENTARIOS</h1>
     <form id="formulario">
         <label for="nombre">Nombre:</label>
+        <span id="nombre-error" class="error-message"></span>
         <input type="text" name="nombre" id="nombre">
 
-        <label for="email">E-mail;</label>
+        <label for="email">E-mail:</label>
+        <span id="email-error" class="error-message"></span>
         <input type="email" name="email" id="email">
 
         <label for="mensaje">Mensaje:</label>
+        <span id="mensaje-error" class="error-message"></span>
         <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
 
-        <button type="button" onclick="validarFormulario()">ENVIAR</button>
+        <button type="submit">ENVIAR</button>
 
 
     </form>

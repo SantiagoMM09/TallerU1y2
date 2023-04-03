@@ -103,10 +103,23 @@ form {
   margin: 80px auto;
   padding: 2rem 3rem;
   box-shadow: 0 0 40px 7px #fff;
+  /*
+      button{
+          @include botones($principal, $secundario, 50%, 50px, none, 10px);
+          display: block;
+          margin: auto;
+          font-size: 20px;
+          cursor: pointer;
+          transition: background-color 0.3s;
+
+          &:hover{
+              background-color: aclarar($principal, 15%);
+          }
+      }*/
 }
 form label {
   display: block;
-  margin-bottom: 0.5rem;
+  margin-bottom: 7px;
 }
 form input, form textarea {
   width: 97%;
@@ -118,7 +131,13 @@ form input, form textarea {
 form textarea {
   height: 100px;
 }
-form button {
+form span {
+  margin-top: 5px;
+}
+form:hover {
+  box-shadow: 0 0 40px 7px #F0131E;
+}
+form button[type=submit] {
   background-color: #F0131E;
   color: #fff;
   width: 50%;
@@ -131,9 +150,16 @@ form button {
   cursor: pointer;
   transition: background-color 0.3s;
 }
-form button:hover {
+form button[type=submit]:hover {
   background-color: #f55b63;
 }
-form:hover {
-  box-shadow: 0 0 40px 7px #F0131E;
+form .error-message {
+  color: #f55b63;
+  font-size: 12px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+form .invalid {
+  border: 1px solid #f22b35;
+  background-color: #fcd3d5;
 }/*# sourceMappingURL=styles_3.css.map */
